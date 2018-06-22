@@ -1,0 +1,61 @@
+
+.box .toptitle{
+    position: relative;
+}
+.box .toptitle image{
+  width: 100%;
+  height: 640rpx;
+}
+.box .toptitle .titlebox{
+  left: 0;
+  top:450rpx;
+  width: 100%;
+  position: absolute;
+  height: 200rpx;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#050201+0,070604+100&0.5+1,1+60 */
+background: -moz-linear-gradient(top,  rgba(5,2,1,0.5) 0%, rgba(5,2,1,0.5) 1%, rgba(6,4,3,1) 60%, rgba(7,6,4,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(5,2,1,0.5) 0%,rgba(5,2,1,0.5) 1%,rgba(6,4,3,1) 60%,rgba(7,6,4,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(5,2,1,0.5) 0%,rgba(5,2,1,0.5) 1%,rgba(6,4,3,1) 60%,rgba(7,6,4,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80050201', endColorstr='#070604',GradientType=0 ); /* IE6-9 */
+
+}
+.box .toptitle .titlebox{ 
+  display: flex;
+  flex-direction: column;
+}
+.box .toptitle .titlebox .title{
+  margin-left: 20rpx;
+  font-size: 50rpx;
+  color: #fff;
+}
+.box .toptitle .titlebox .time{
+  margin-left: 20rpx;
+  font-size: 30rpx;
+  color: #ccc;
+}
+.box .container .item{
+  padding: 20rpx 40rpx;
+  display: flex;
+  overflow: hidden;
+}
+.box .container .item .num{
+  color: #fff;
+}
+.box .container .item .right{
+  display: flex;
+  flex-direction: column;
+  margin-left: 40rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  overflow-wrap: ellipeis;
+}
+.box .container .item .right .title{
+  font-size: 36rpx;
+  color: #fff;
+}
+.box .container .item .right .info{
+  font-size:30rpx;
+  color:#ccc;
+}
+
+

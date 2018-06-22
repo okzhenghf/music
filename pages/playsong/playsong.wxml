@@ -1,0 +1,26 @@
+<view class="box">
+  <view class="nav">
+    <image class="poster" src="{{imgPath}}"></image>
+    <view class="content" >
+      <text class="singname">{{songlist.songname}}</text>
+      <text class="songname">{{songlist.singer[0].name}}</text>
+    </view>
+    <image class="play" src="{{imgpath ? '/img/icon-pause.png' : '/img/icon-play.png'}}"
+       bindtap="opensing"
+    ></image>
+  </view>
+  <scroll-view
+    scroll-y
+    style="height:800rpx;"
+  >
+      <text class="lyric">{{lyricText}}</text>
+  </scroll-view>
+  <view class="bottom">
+    <text>{{currentScent < 1 ? '0' : ''}}{{currentScent}}:{{currentPosition % 60 < 10 ? '0': ''}}{{currentPosition % 60}}</text>
+    <view class="bar">
+      <view class="bar1" style="width : {{width  +'%'}}"></view>
+    </view>
+    <text>{{allFZ < 10?'0':''}}{{allFZ}}:{{duration %60 < 10 ?'0' :''}}{{duration  % 60}}</text>
+  </view>
+
+</view>

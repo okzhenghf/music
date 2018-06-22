@@ -1,0 +1,23 @@
+
+<view class="box" style="background:#{{bgColor}}">
+  <view class="toptitle">
+    <image src="{{pic_album}}"></image>
+      <view class="titlebox">
+          <text class="title">{{ListName}}</text>
+          <text class="time">{{date}}   更新</text>
+      </view>
+  </view>
+  <view class="container">
+    <view class="item" 
+    data-idgg="{{index}}" 
+    bindtap="openPlaysong" 
+    wx:for="{{songlist}}" 
+    wx:key="dg">
+        <text class="num">{{index+1}}</text>
+        <view class="right">
+            <text class="title">{{item.data.songname}}</text>
+            <text class="info">{{item.data.singer[0].name }}   {{item.data.albumname}}</text>
+        </view>
+    </view>
+  </view>
+</view>
